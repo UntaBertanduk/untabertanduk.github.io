@@ -41,10 +41,9 @@
             ѕтαт!
             <div class="badge text-primary"> </div>
           </a>
-          <!-- <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src="images/logo-mini.svg" alt="logo" />
-            4SI1
-          </a> -->
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="images/dashboard/chart.svg" alt="logo" />
+          </a>
         </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-top">
@@ -58,7 +57,8 @@
             <!-- <h3 class="welcome-sub-text">Your performance summary this week </h3> -->
           </li>
         </ul>
-        
+        <ul class="navbar-nav ms-auto">
+        </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
           data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
@@ -161,7 +161,7 @@
             </div>
           </div> -->
           <!-- To do section tab ends -->
-          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+          <!-- <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
             <div class="d-flex align-items-center justify-content-between border-bottom">
               <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
               <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
@@ -219,7 +219,7 @@
                 <small class="text-muted my-auto">47 min</small>
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- chat tab ends -->
         </div>
       </div>
@@ -227,16 +227,15 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item nav-category">Indonesia</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false"
-              aria-controls="ui-basic">
+            <a class="nav-link" href="pages/indonesia/wisnus.html">
               <i class="menu-icon mdi mdi-floor-plan"></i>
               <span class="menu-title">Statistik Wisatawan<br>Nusantara</span>
               <i class="menu-arrow"></i>
@@ -257,8 +256,7 @@
           </li>
           <li class="nav-item nav-category">Mancanegara</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false"
-              aria-controls="form-elements">
+            <a class="nav-link" href="pages/mancanegara/kwisman.html">
               <i class="menu-icon mdi mdi-card-text-outline"></i>
               <span class="menu-title">Statistik Kunjungan<br>Wisatawan Mancanegara</span>
               <i class="menu-arrow"></i>
@@ -282,7 +280,7 @@
             </div>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="tables">
+            <a class="nav-link" href="pages/mancanegara/pwisman.html">
               <i class="menu-icon mdi mdi-table"></i>
               <span class="menu-title">Statistik Pengeluaran<br>Wisatawan Mancanegara</span>
               <i class="menu-arrow"></i>
@@ -344,12 +342,15 @@
                             <div class="card card-rounded">
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-center ">
-                                  <div>
-                                    <img style="width: 475px;" src="images/dashboard/turis.jpg" alt="">
+                                  <div class="col-lg-6">
+                                    <img class="img-fluid" src="images/dashboard/turis.jpg" alt="">
                                   </div>
                                   <div>
-                                    <h2><span class="text-primary text-start">Dashboard Publikasi <span class="fw-bold">Statistik Pariwisata</span></span></h2>
-                                    <h4 class="card-subtitle card-subtitle-dash">Website ini berisi tentang Publikasi, Berita Resmi Statistik, dan Infografis yang berkaitan dengan pariwisata di Indonesia</h4>
+                                    <h3><span class="text-secondary text-start">Dashboard Publikasi<br><span
+                                          class="fw-bold fs-1 text-primary">Statistik Pariwisata</span></span></h3>
+                                    <h4 class="card-subtitle card-subtitle-dash">Website ini berisi tentang Publikasi,
+                                      Berita Resmi Statistik, dan Infografis yang berkaitan dengan pariwisata di
+                                      Indonesia</h4>
                                   </div>
                                 </div>
                               </div>
@@ -367,15 +368,19 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Statistik Wisatawan Nusantara 2021 <a class="text-decoration-none" href="#" class=""><div class="badge badge-opacity-success me-3">Selengkapnya</div></a></h4>
-                                    <p class="card-subtitle card-subtitle-dash">Jumlah Perjalanan Wisatawan Nusantara, Tahun 2020-2021</p> <br>
+                                    <h4 class="card-title card-title-dash">Statistik Wisatawan Nusantara 2021 <a
+                                        class="text-decoration-none" href="pages/indonesia/wisnus.html" class="">
+                                        <div class="badge badge-opacity-success me-3">Selengkapnya</div>
+                                      </a></h4>
+                                    <p class="card-subtitle card-subtitle-dash">Jumlah Perjalanan Wisatawan Nusantara,
+                                      Tahun 2020-2021</p> <br>
                                     <!-- <h5 class="card-subtitle card-subtitle-dash">Jumlah Perjalanan Wisatawan Nusantara, Tahun 2020-2021</h5> -->
                                   </div>
                                   <div id="survei-wisnus-legend"></div>
                                 </div>
-                                <div class="chartjs-wrapper mt-6" >
+                                <div class="mt-6">
                                   <!-- <canvas id="performaneLine"></canvas> -->
-                                  <canvas id="surveiWisnus" style="width: 500px;height: 190px;"></canvas>
+                                  <canvas id="surveiWisnus" height="280"></canvas>
                                 </div>
                               </div>
                             </div>
@@ -383,77 +388,99 @@
                         </div>
                       </div>
                       <div class="col-md-4 col-lg-4 grid-margin stretch-card">
-                            <div class="card card-rounded">
-                              <div class="card-body card-rounded">
-                                <h4 class="card-title  card-title-dash">Berita Resmi Statistik Terbaru</h4>
-                                <div class="list align-items-center border-bottom py-2">
-                                  <div class="wrapper w-100">
-                                    <p class="mb-2 font-weight-medium">
-                                      <a class="text-decoration-none text-dark" target="_blank" href="https://www.bps.go.id/pressrelease/2022/11/01/1878/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-september-2022-mencapai-538-32-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-september-2022-naik-11-52-persen-.html">Jumlah kunjungan wisman ke Indonesia . . .</a> 
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <div class="d-flex align-items-center">
-                                        <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">1 Nov 2022</p>
-                                      </div>
-                                      <a class="text-decoration-none" target="_blank" href="https://www.bps.go.id/website/images/Pariwisata-Rilis-November-2022-ind.jpg"><div class="badge badge-opacity-warning me-3">Infografis</div></a> 
-                                    </div>
+                        <div class="card card-rounded">
+                          <div class="card-body card-rounded">
+                            <h4 class="card-title  card-title-dash">Berita Resmi Statistik Terbaru</h4>
+                            <div class="list align-items-center border-bottom py-2">
+                              <div class="wrapper w-100">
+                                <p class="mb-2 font-weight-medium">
+                                  <a class="text-decoration-none text-dark" target="_blank"
+                                    href="https://www.bps.go.id/pressrelease/2022/11/01/1878/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-september-2022-mencapai-538-32-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-september-2022-naik-11-52-persen-.html">Jumlah
+                                    kunjungan wisman ke Indonesia . . .</a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-calendar text-muted me-1"></i>
+                                    <p class="mb-0 text-small text-muted">1 Nov 2022</p>
                                   </div>
-                                </div>
-                                <div class="list align-items-center border-bottom py-2">
-                                  <div class="wrapper w-100">
-                                    <p class="mb-2 font-weight-medium">
-                                      <a class="text-decoration-none text-dark" target="_blank" href="https://www.bps.go.id/pressrelease/2022/10/03/1877/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-agustus-2022-mencapai-510-25-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-agustus-2022-naik-32-29-persen.html">Jumlah kunjungan wisman ke Indonesia . . .</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <div class="d-flex align-items-center">
-                                        <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">3 Okt 2022</p>
-                                      </div>
-                                      <a class="text-decoration-none" target="_blank" href="https://www.bps.go.id/website/images/Pariwisata-Rilis-Oktober-2022-ind.jpg"><div class="badge badge-opacity-warning me-3">Infografis</div></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="list align-items-center border-bottom py-2">
-                                  <div class="wrapper w-100">
-                                    <p class="mb-2 font-weight-medium">
-                                      <a class="text-decoration-none text-dark" target="_blank" href="https://www.bps.go.id/pressrelease/2022/09/01/1876/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-juli-2022-mencapai-476-97-ribu-kunjungan--dan-jumlah-penumpang-kereta-api-pada-juli-2022-naik-9-02-persen-.html">Jumlah kunjungan wisman ke Indonesia . . .</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <div class="d-flex align-items-center">
-                                        <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">1 Sep 2022</p>
-                                      </div>
-                                      <a class="text-decoration-none" target="_blank" href="https://www.bps.go.id/website/images/Pariwisata-Rilis-Septermber-2022-ind.jpg"><div class="badge badge-opacity-warning me-3">Infografis</div></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="list align-items-center border-bottom py-2">
-                                  <div class="wrapper w-100">
-                                    <p class="mb-2 font-weight-medium">
-                                      <a class="text-decoration-none text-dark" target="_blank" href="https://www.bps.go.id/pressrelease/2022/08/01/1875/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-juni-2022-mencapai-345-44-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-juni-2022-naik-23-28-persen.html">Jumlah kunjungan wisman ke Indonesia . . .</a>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <div class="d-flex align-items-center">
-                                        <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">1 Agu 2022</p>
-                                      </div>
-                                      <a class="text-decoration-none" target="_blank" href="https://www.bps.go.id/website/images/Rilis-Pariwisata-Agustus-2022-ind.jpg"><div class="badge badge-opacity-warning me-3">Infografis</div></a>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="list align-items-center pt-3">
-                                  <div class="wrapper w-100">
-                                    <p class="mb-0">
-                                      <a target="_blank" href="https://www.bps.go.id/pressrelease.html?katsubjek=16&Brs%5Btgl_rilis_ind%5D=&Brs%5Btahun%5D=&yt0=Cari" class="fw-bold text-primary">Selengkapnya <i
-                                          class="mdi mdi-arrow-right ms-2"></i></a>
-                                    </p>
-                                  </div>
+                                  <a class="text-decoration-none" target="_blank"
+                                    href="https://www.bps.go.id/website/images/Pariwisata-Rilis-November-2022-ind.jpg">
+                                    <div class="badge badge-opacity-warning me-3">Infografis</div>
+                                  </a>
                                 </div>
                               </div>
                             </div>
+                            <div class="list align-items-center border-bottom py-2">
+                              <div class="wrapper w-100">
+                                <p class="mb-2 font-weight-medium">
+                                  <a class="text-decoration-none text-dark" target="_blank"
+                                    href="https://www.bps.go.id/pressrelease/2022/10/03/1877/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-agustus-2022-mencapai-510-25-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-agustus-2022-naik-32-29-persen.html">Jumlah
+                                    kunjungan wisman ke Indonesia . . .</a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-calendar text-muted me-1"></i>
+                                    <p class="mb-0 text-small text-muted">3 Okt 2022</p>
+                                  </div>
+                                  <a class="text-decoration-none" target="_blank"
+                                    href="https://www.bps.go.id/website/images/Pariwisata-Rilis-Oktober-2022-ind.jpg">
+                                    <div class="badge badge-opacity-warning me-3">Infografis</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list align-items-center border-bottom py-2">
+                              <div class="wrapper w-100">
+                                <p class="mb-2 font-weight-medium">
+                                  <a class="text-decoration-none text-dark" target="_blank"
+                                    href="https://www.bps.go.id/pressrelease/2022/09/01/1876/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-juli-2022-mencapai-476-97-ribu-kunjungan--dan-jumlah-penumpang-kereta-api-pada-juli-2022-naik-9-02-persen-.html">Jumlah
+                                    kunjungan wisman ke Indonesia . . .</a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-calendar text-muted me-1"></i>
+                                    <p class="mb-0 text-small text-muted">1 Sep 2022</p>
+                                  </div>
+                                  <a class="text-decoration-none" target="_blank"
+                                    href="https://www.bps.go.id/website/images/Pariwisata-Rilis-Septermber-2022-ind.jpg">
+                                    <div class="badge badge-opacity-warning me-3">Infografis</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list align-items-center border-bottom py-2">
+                              <div class="wrapper w-100">
+                                <p class="mb-2 font-weight-medium">
+                                  <a class="text-decoration-none text-dark" target="_blank"
+                                    href="https://www.bps.go.id/pressrelease/2022/08/01/1875/jumlah-kunjungan-wisman-ke-indonesia-melalui-pintu-masuk-utama-pada-juni-2022-mencapai-345-44-ribu-kunjungan-dan-jumlah-penumpang-angkutan-udara-internasional-pada-juni-2022-naik-23-28-persen.html">Jumlah
+                                    kunjungan wisman ke Indonesia . . .</a>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-calendar text-muted me-1"></i>
+                                    <p class="mb-0 text-small text-muted">1 Agu 2022</p>
+                                  </div>
+                                  <a class="text-decoration-none" target="_blank"
+                                    href="https://www.bps.go.id/website/images/Rilis-Pariwisata-Agustus-2022-ind.jpg">
+                                    <div class="badge badge-opacity-warning me-3">Infografis</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="list align-items-center pt-3">
+                              <div class="wrapper w-100">
+                                <p class="mb-0">
+                                  <a target="_blank"
+                                    href="https://www.bps.go.id/pressrelease.html?katsubjek=16&Brs%5Btgl_rilis_ind%5D=&Brs%5Btahun%5D=&yt0=Cari"
+                                    class="fw-bold text-primary">Selengkapnya <i
+                                      class="mdi mdi-arrow-right ms-2"></i></a>
+                                </p>
+                              </div>
+                            </div>
                           </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-8 d-flex flex-column">
@@ -464,8 +491,12 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Statistik Kunjungan Wisatawan Mancanegara 2021 <a class="text-decoration-none" href="#" class=""><div class="badge badge-opacity-success me-3">Selengkapnya</div></a></h4>
-                                    <p class="card-subtitle card-subtitle-dash">Kedatangan Wisatawan Mancanegara ke Indonesia 2017-2021</p>
+                                    <h4 class="card-title card-title-dash">Statistik Kunjungan Wisatawan Mancanegara
+                                      2021 <a class="text-decoration-none" href="pages/mancanegara/kwisman.html" class="">
+                                        <div class="badge badge-opacity-success me-3">Selengkapnya</div>
+                                      </a></h4>
+                                    <p class="card-subtitle card-subtitle-dash">Kedatangan Wisatawan Mancanegara ke
+                                      Indonesia 2017-2021</p>
                                   </div>
                                   <div>
                                     <!-- dropdown coy
@@ -505,20 +536,22 @@
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded bg-info">
                               <div class="card-body">
-                                <div class="col-sm-8">
-                                  <h3 class="text-white upgrade-info mt-5 mb-0">
-                                    Untuk informasi yang lebih lengkap, kunjungi halaman <span class="fw-bold">BPS</span>
+                                <div class="col-sm-12">
+                                  <h3 class="text-white upgrade-info mt-4 mb-2">
+                                    Untuk informasi yang lebih lengkap, silahkan kunjungi halaman <span
+                                      class="fw-bold">BPS</span>
                                   </h3>
                                   <div>
-                                    <a target="_blank" href="https://bps.go.id" class="btn btn-warning upgrade-btn">Kunjungi Halaman</a>
+                                    <a target="_blank" href="https://bps.go.id"
+                                      class="btn btn-warning upgrade-btn">Kunjungi Halaman</a>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        
-                       
+
+
                       </div>
                       <div class="col-lg-4 d-flex flex-column">
                         <!-- <div class="row flex-grow">
@@ -602,9 +635,13 @@
                                 <div class="row">
                                   <div class="col-lg-12">
                                     <div class="d-sm-flex justify-content-between align-items-center mb-3">
-                                      <h4 class="card-title card-title-dash">Statistik Pengeluaran Wisatawan Mancanegara 2021 <a class="text-decoration-none" href="#" class=""><div class="badge badge-opacity-success me-3">Selengkapnya</div></a></h4>
+                                      <h4 class="card-title card-title-dash">Statistik Pengeluaran Wisatawan Mancanegara
+                                        2021 <a class="text-decoration-none" href="pages/mancanegara/pwisman.html" class="">
+                                          <div class="badge badge-opacity-success me-3">Selengkapnya</div>
+                                        </a></h4>
                                     </div>
-                                    <p class="card-subtitle card-subtitle-dash">Persentase Kedatangan Wisman berdasarkan Tujuan Perjalanan Tahun 2021</p>
+                                    <p class="card-subtitle card-subtitle-dash">Persentase Kedatangan Wisman berdasarkan
+                                      Tujuan Perjalanan Tahun 2021</p>
                                     <canvas class="my-auto" id="doughnutChart" height="200"></canvas>
                                     <!-- <div id="doughnut-chart-legend" class="mt-3 text-center"></div> -->
                                   </div>
@@ -621,7 +658,10 @@
                                   <div class="col-lg-12">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                       <div>
-                                        <h4 class="card-title card-title-dash">5 Besar Kedatangan Wisatawan Mancanegara Indonesia menurut Kebangsaan, 2021 <a class="text-decoration-none" href="#" class=""><div class="badge badge-opacity-success me-3">Selengkapnya</div></a></h4>
+                                        <h4 class="card-title card-title-dash">5 Besar Kedatangan Wisatawan Mancanegara Indonesia menurut Kebangsaan, 2021 <a class="text-decoration-none" href="pages/mancanegara/kwisman.html"
+                                            class="">
+                                            <div class="badge badge-opacity-success me-3">Selengkapnya</div>
+                                          </a></h4>
                                       </div>
                                     </div>
                                     <div class="mt-3">
@@ -633,7 +673,7 @@
                             </div>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                   </div>
@@ -649,7 +689,8 @@
             <!-- <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span> -->
             <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span> -->
             <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"></span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">221910755 - Hariyo Adi Sakti (4SI1)</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">221910755 - Hariyo Adi Sakti
+              (4SI1)</span>
           </div>
         </footer>
         <!-- partial -->

@@ -615,23 +615,23 @@
             bottom: 0
           }
         },
-        tooltips: {
-          callbacks: {
-            title: function(tooltipItem, data) {
-              return data['labels'][tooltipItem[0]['index']];
-            },
-            label: function(tooltipItem, data) {
-              return data['datasets'][0]['data'][tooltipItem['index']];
-            }
-          },
+        // tooltips: {
+        //   callbacks: {
+        //     title: function(tooltipItem, data) {
+        //       return data['labels'][tooltipItem[0]['index']];
+        //     },
+        //     label: function(tooltipItem, data) {
+        //       return data['datasets'][0]['data'][tooltipItem['index']];
+        //     }
+        //   },
             
-          backgroundColor: '#fff',
-          titleFontSize: 14,
-          titleFontColor: '#0B0F32',
-          bodyFontColor: '#737F8B',
-          bodyFontSize: 11,
-          displayColors: false
-        }
+        //   backgroundColor: '#fff',
+        //   titleFontSize: 14,
+        //   titleFontColor: '#0B0F32',
+        //   bodyFontColor: '#737F8B',
+        //   bodyFontSize: 11,
+        //   displayColors: false
+        // }
       };
       var doughnutChart = new Chart(doughnutChartCanvas, {
         type: 'doughnut',
@@ -671,8 +671,9 @@
                   ticks: {
                     beginAtZero: true,
                     autoSkip: true,
-                    maxTicksLimit: 5,
+                    maxTicksLimit: 7,
                     fontSize: 10,
+                    // max: 900000,
                     color:"#6B778C"
                   }
               }],
@@ -698,9 +699,9 @@
                   tension: 0.4,
               }
           },
-          tooltips: {
-              backgroundColor: 'rgba(31, 59, 179, 1)',
-          }
+          // tooltips: {
+          //     backgroundColor: 'rgba(31, 59, 179, 1)',
+          // }
       }
       var leaveReport = new Chart(leaveReportChart, {
           type: 'bar',

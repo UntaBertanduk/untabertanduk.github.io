@@ -49,7 +49,7 @@
 
             var surveiWisnusOptions = {
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 scales: {
                     yAxes: [{
                         gridLines: {
@@ -59,10 +59,12 @@
                             zeroLineColor: '#F0F0F0',
                         },
                         ticks: {
-                            beginAtZero: false,
-                            maxTicksLimit: 6,
-                            autoSkip: true,
+                            beginAtZero: true,
+                            // maxTicksLimit: 6,
+                            // autoSkip: true,
                             fontSize: 10,
+                            // min: 0,
+                            // max: 65000000,
                             color: "#6B778C"
                         }
                     }],
@@ -103,9 +105,9 @@
                         tension: 0,
                     }
                 },
-                tooltips: {
-                    backgroundColor: 'rgba(31, 59, 179, 1)',
-                }
+                // tooltips: {
+                //     backgroundColor: 'rgba(31, 59, 179, 1)',
+                // }
             }
             var surveiWisnus = new Chart(graphGradient, {
                 type: 'line',
@@ -174,9 +176,9 @@
                   tension: 0,
               }
           },
-          tooltips: {
-              backgroundColor: 'rgba(31, 59, 179, 1)',
-          }
+        //   tooltips: {
+        //       backgroundColor: 'rgba(31, 59, 179, 1)',
+        //   }
       }
       var statistikWisman = new Chart(statistikWismanChart, {
           type: 'line',
